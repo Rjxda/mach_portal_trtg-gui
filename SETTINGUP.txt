@@ -1,0 +1,16 @@
+To setup this project, all you have to do is the following:
+1.Change the GROUP ID of the project to the following format:"com.(yourname).mach-portal".
+2.Change the team to your own (right below Group ID)
+3.Go to Capabilities>App Groups and add your own in the following format:"group.(yourname).mach_portal".
+4.Now, navigate to jailbreak.c, and change "App Group" to the App Group you just set.
+5.Make sure your Apple ID is linked to Xcode.
+6.Plug in your iDevice.
+7.Click run, AKA the play button in the top left of Xcode.
+8.Wait for Xcode to tell you that you need to trust a Provisioning Profile, and go to Settings>General>Profiles and Device Management, your Apple ID, and click the blue trust button.
+9.Go to Settings>Wifi, and connect to a Wifi. Once done, click the blue "i" next to your device and write down the IP Address.
+10.Click the play button once again, and let Xcode do its thing. The app should open.
+11.DO NOT CLOSE THE APP! If the device reboots, just try again.
+12.If the app doesn't close, open terminal, and type in nc (iPhoneIP) 4141. You should get a full file browser within terminal. To list directories, type ls, and to open them, type cd (directory name).
+13.To download files, open an internet browser such as chrome, and type in the following Address: http://(iPhoneIP):8081. You should get a form with a download button.
+14.To download a certain file, use the terminal browser to find the full path of a file, including the file. For example, if I wanted the kernelcache, I could type /System/Library/Caches/com.apple.kernelcaches/kernelcache into the form and click download.
+15.And that's all! Enjoy!
