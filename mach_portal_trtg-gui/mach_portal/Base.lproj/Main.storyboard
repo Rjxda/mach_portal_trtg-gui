@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,13 +24,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2017 Ian Beer. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Q3-Yf-Xtb">
-                                <rect key="frame" x="20" y="626" width="335" height="21"/>
+                                <rect key="frame" x="20" y="626.5" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconLoad" translatesAutoresizingMaskIntoConstraints="NO" id="I1X-TM-9Ei">
+                                <rect key="frame" x="17" y="154" width="340" height="359"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mach_portal" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="wBQ-nA-kht">
-                                <rect key="frame" x="20" y="202" width="335" height="43"/>
+                                <rect key="frame" x="20" y="64" width="335" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,16 +42,24 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="2Q3-Yf-Xtb" secondAttribute="centerX" id="2LS-g8-bL7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I1X-TM-9Ei" secondAttribute="bottom" constant="154" id="2e5-Yd-yrx"/>
+                            <constraint firstItem="I1X-TM-9Ei" firstAttribute="top" secondItem="wBQ-nA-kht" secondAttribute="bottom" constant="47" id="5VH-MO-0b2"/>
                             <constraint firstItem="wBQ-nA-kht" firstAttribute="leading" secondItem="Axx-FE-Uez" secondAttribute="leading" constant="20" symbolic="YES" id="6ph-Ft-m27"/>
                             <constraint firstAttribute="centerX" secondItem="wBQ-nA-kht" secondAttribute="centerX" id="ANx-K0-WXx"/>
                             <constraint firstItem="2Q3-Yf-Xtb" firstAttribute="leading" secondItem="Axx-FE-Uez" secondAttribute="leading" constant="20" symbolic="YES" id="DPz-Hn-PHf"/>
                             <constraint firstAttribute="bottom" secondItem="2Q3-Yf-Xtb" secondAttribute="bottom" constant="20" id="Es1-bE-r0h"/>
-                            <constraint firstItem="wBQ-nA-kht" firstAttribute="centerY" secondItem="Axx-FE-Uez" secondAttribute="bottom" multiplier="1/3" constant="1" id="Zua-6u-tuy"/>
+                            <constraint firstItem="wBQ-nA-kht" firstAttribute="centerY" secondItem="Axx-FE-Uez" secondAttribute="bottom" multiplier="1/3" constant="-136.83333333333331" id="Zua-6u-tuy"/>
+                            <constraint firstItem="I1X-TM-9Ei" firstAttribute="centerX" secondItem="wBQ-nA-kht" secondAttribute="centerX" constant="-0.5" id="hrW-Te-vwd"/>
+                            <constraint firstItem="I1X-TM-9Ei" firstAttribute="leading" secondItem="Axx-FE-Uez" secondAttribute="leadingMargin" constant="1" id="yHW-cr-GwA"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="55.200000000000003" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppIconLoad" width="768" height="768"/>
+    </resources>
 </document>

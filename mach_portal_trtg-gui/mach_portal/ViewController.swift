@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //MARK: Load
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async(execute: { () -> Void in
@@ -21,7 +23,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
