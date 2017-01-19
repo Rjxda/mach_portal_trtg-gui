@@ -7,6 +7,9 @@ I do not take credit for ANYTHING in this app except for the app's GUI. Everythi
 
 There is one version for all devices, which is in the mach_portal folder. There is also an iPA, but it seems to not work according to my testing. (You can sideload it with Cydia Impactor if you want to give it a try.) 
 
+If you want to read more about this app/project and what it does behind the scenes, read here:
+https://bugs.chromium.org/p/project-zero/issues/detail?id=965
+
 Enjoy!
 
 P.S. If you need help on setting up this project, open SETTINGUP.txt in the repository.
