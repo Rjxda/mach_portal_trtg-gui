@@ -1,4 +1,4 @@
-# mach_portal-gui
+# mach_portal_trtg-gui
 A GUI for the mach_portal app made by Ian Beer of Google Project Zero.
 
 Also gathered a few other features from r/jailbreak, such as all offsets for 64-bit devices and the ability to connect over html instead of just terminal. I've also added a cool AppIcon for mach_portal (which is also from r/jailbreak). Credit to the owners has already been given in the respected modified files.
